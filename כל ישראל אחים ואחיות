@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>שם העמותה</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #3498db;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        nav {
+            background-color: #2980b9;
+            padding: 1rem;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        
+        nav ul li {
+            margin: 0 1rem;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 3rem 0;
+        }
+        
+        .about-section {
+            margin: 2rem 0;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        
+        footer {
+            background-color: #34495e;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .button {
+            background-color: #3498db;
+            color: white;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>שם העמותה</h1>
+        <p>משפט מוביל של העמותה</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#about">אודות</a></li>
+            <li><a href="#projects">פרויקטים</a></li>
+            <li><a href="#contact">צור קשר</a></li>
+            <li><a href="#donate">תרומה</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section class="hero">
+            <img src="/api/placeholder/800/400" alt="תמונת נושא">
+            <h2>ברוכים הבאים לעמותה שלנו</h2>
+            <p>כאן יבוא תיאור קצר על מטרות העמותה והחזון שלה</p>
+        </section>
+        
+        <section id="about" class="about-section">
+            <h2>אודות העמותה</h2>
+            <p>כאן יבוא תיאור מפורט יותר על העמותה, ההיסטוריה שלה, והערכים המובילים אותה.</p>
+        </section>
+        
+        <section id="projects">
+            <h2>הפרויקטים שלנו</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>פרויקט 1</h3>
+                    <img src="/api/placeholder/300/200" alt="פרויקט 1">
+                    <p>תיאור הפרויקט הראשון</p>
+                </div>
+                <div class="project-card">
+                    <h3>פרויקט 2</h3>
+                    <img src="/api/placeholder/300/200" alt="פרויקט 2">
+                    <p>תיאור הפרויקט השני</p>
+                </div>
+                <div class="project-card">
+                    <h3>פרויקט 3</h3>
+                    <img src="/api/placeholder/300/200" alt="פרויקט 3">
+                    <p>תיאור הפרויקט השלישי</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>צור קשר</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="שם מלא" required>
+                <input type="email" placeholder="דואר אלקטרוני" required>
+                <textarea placeholder="ההודעה שלך" rows="5" required></textarea>
+                <button type="submit" class="button">שליחה</button>
+            </form>
+        </section>
+        
+        <section id="donate">
+            <h2>תמכו בנו</h2>
+            <p>עזרו לנו להמשיך בפעילות החשובה שלנו</p>
+            <button class="button">לתרומה</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>כל הזכויות שמורות © 2024 שם העמותה</p>
+        <p>כתובת: רחוב ומספר, עיר</p>
+        <p>טלפון: 0547904083</p>
+        <p>דואר אלקטרוני: info@yourorg.org</p>
+    </footer>
+</body>
